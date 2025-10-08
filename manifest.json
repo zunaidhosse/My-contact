@@ -1,0 +1,23 @@
+{
+  "name": "Zunaid Hossen Meraj - Digital Visiting Card",
+  "short_name": "Zunaid Card",
+  "description": "A modern, professional digital visiting card for Zunaid Hossen Meraj.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#eceef1",
+  "theme_color": "#eceef1",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
+

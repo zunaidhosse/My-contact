@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERR Dream - Digital Visiting Card</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#eceef1"/>
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="card">
+        <!-- VIP Badge -->
+        <div class="vip-badge">VIP</div>
+        
+        <!-- Dark Mode Toggle -->
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </div>
+            </label>
+        </div>
+
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <img src="profile.png" alt="Zunaid Hossen Meraj" class="profile-pic">
+            <h1 class="name">ZUNAID HOSSEN MERAJ</h1>
+            <p class="tagline">Web Developer & UI Designer</p>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <a href="tel:+966581991368" class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+966 0581991368</span>
+            </a>
+            <a href="mailto:rjmeraj662@gmail.com" class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>rjmeraj662@gmail.com</span>
+            </a>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Saudi Arabia</span>
+            </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="socials">
+            <a href="https://www.facebook.com/Zunaid6472" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/966581991368" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://zunaidhosse.github.io/My-all-apps/" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://youtube.com/@gnsesports?si=ISWXWamPSph_DHoG" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        
+        <!-- QR Code Section -->
+        <div class="qr-code-section">
+            <h2>Scan to Save Contact</h2>
+            <img src="qr-code.png" alt="QR Code to save contact" class="qr-code">
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            Made with ❤️ by ZUNAID HOSSEN MERAJ
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
