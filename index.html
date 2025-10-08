@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter with ATM Card Style</title>
+    <meta name="theme-color" content="#1a73e8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Currency Converter">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="converter-box">
+        <h2>Currency Converter</h2>
+        
+        <label for="rate">Saudi Riyal Rate:</label>
+        <input type="text" id="rate" inputmode="decimal" placeholder="Example: 32.50">
+        
+        <label for="amount">Amount in BDT:</label>
+        <input type="text" id="amount" inputmode="decimal" placeholder="Enter amount">
+        
+        <label for="clientName">Client Name:</label>
+        <input type="text" id="clientName" placeholder="Enter client name">
+        
+        <label for="clientAmountPaid">SAR Joma:</label>
+        <input type="text" id="clientAmountPaid" inputmode="decimal" placeholder="Client paid amount">
+        
+        <label for="previousAmount">Previous Due (Optional):</label>
+        <input type="text" id="previousAmount" inputmode="decimal" placeholder="Previous due amount">
+
+        <label for="customDate">Date:</label>
+        <input type="date" id="customDate">
+
+        <button onclick="convertCurrency()">Convert</button>
+        
+        <div class="result" id="result"></div>
+        <div class="error" id="error"></div>
+        
+        <div id="idCardContent">
+            <div class="chip"></div>
+            <h3>CURRENCY EXCHANGE</h3>
+            <p>Name: <span id="clientNameResult"></span></p>
+            <p>Rate: <span id="rateResult"></span> SAR</p>
+            <p>BDT Amount: <span id="amountResult"></span></p>
+            <div class="calculated-amount">SAR: <span id="calculatedSAR"></span></div>
+            <p>SAR/&#x2014;&gt;Joma: <span id="clientAmountPaidResult"></span></p>
+            <p id="shortfallResult"></p>
+            <p id="excessAmountResult"></p>
+            <p id="remainingBalanceResult"></p>
+            <p id="currentDate"></p>
+        </div>
+        
+        <button class="color-change-btn" onclick="changeCardColor()">Change Card Color</button>
+        <button class="download-btn" onclick="downloadPNG()">Download ID Card (PNG)</button>
+    </div>
+
+    <div id="installPopup" class="install-popup-overlay" style="display: none;">
+        <div class="install-popup-content">
+            <h3>Install Currency Converter</h3>
+            <p>Install this app on your device for quick access!</p>
+            <button id="installButton" class="install-btn">Install App</button>
+            <button id="closeInstallPopup" class="close-btn">Not Now</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
